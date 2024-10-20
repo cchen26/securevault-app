@@ -50,7 +50,7 @@ const Login = () => {
   const [
     verifyQrCode,
     {
-      data: qrCodeData,
+      data: _qrCodeData,
       error: qrCodeError,
       isLoading: qrCodeLoading,
       isSuccess: qrCodeSuccess,

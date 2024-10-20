@@ -4,8 +4,13 @@ import logo from "../assets/logo.png";
 import { Key } from "../enum/cache.key";
 
 const NavBar = () => {
-  const { data: user, error, isLoading, refetch } = userAPI.useFetchUserQuery();
-  const [logout, { isLoading: logoutLoading }] = userAPI.useLogoutMutation();
+  const {
+    data: user,
+    error: _error,
+    isLoading,
+    refetch: _refetch,
+  } = userAPI.useFetchUserQuery();
+  const [logout, { isLoading: _logoutLoading }] = userAPI.useLogoutMutation();
   const navigate = useNavigate();
 
   const onLogout = async () => {
